@@ -4,14 +4,21 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv').config();
 
 const authRoute = require('./routes/auth');
+const userRoute = require('./routes/users');
+const postRoute = require('./routes/posts');
+const commentRoute = require('./routes/comments');
 
 // 환경변수 포트 및 기본 포트 설정
 const port = process.env.PORT || 3000;
 
 const app = express();
 
+// 필요한 미들웨어 불러오기
 app.use(express.json());
 app.use('/api/auth', authRoute);
+app.use('/api/users', userRoute);
+app.use('/api/posts', postRoute);
+app.use('/api/posts', commentRoute);
 
 // 데이터베이스에 연결하는 비동기 함수
 const connectDB = async () => {
