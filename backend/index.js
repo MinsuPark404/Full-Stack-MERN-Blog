@@ -6,8 +6,7 @@ const cookieParser = require('cookie-parser')
 const authRoute = require('./routes/auth');
 const userRoute = require('./routes/users');
 const postRoute = require('./routes/posts');
-const commentRoute = require('./routes/commen
-ts');
+const commentRoute = require('./routes/comments');
 
 // 환경변수 포트 및 기본 포트 설정
 const port = process.env.PORT || 3000;
