@@ -1,9 +1,9 @@
+import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { ImCross } from 'react-icons/im';
-import { useState } from 'react';
 
-export const CreatePost = () => {
+const EditPost = () => {
   const [cat, setCat] = useState('');
   const [cats, setCats] = useState([]);
 
@@ -16,12 +16,11 @@ export const CreatePost = () => {
     setCats([...cats, cat]);
     setCat('');
   };
-
   return (
     <div>
       <Navbar />
       <div className="px-6 md:px-[200px] mt-8">
-        <h1 className="font-bold md:text-2xl text-xl">Create a post</h1>
+        <h1 className="font-bold md:text-2xl text-xl">Update a post</h1>
         <form className="w-full flex flex-col space-y-4 md:space-y-8 mt-4">
           <input type="text" placeholder="Enter post title" className="px-4 py-2 outline-none" />
           <input type="file" className="px-4" />
@@ -46,10 +45,12 @@ export const CreatePost = () => {
             </div>
           </div>
           <textarea cols={30} rows={15} className="px-4 py-2 outline-none" placeholder="Enter post description" />
-          <button className="bg-black w-full md:w-[20%] mx-auto text-white font-semibold px-4 py-2 md:text-xl text-lg">Creater</button>
+          <button className="bg-black w-full md:w-[20%] mx-auto text-white font-semibold px-4 py-2 md:text-xl text-lg">Updata</button>
         </form>
       </div>
       <Footer />
     </div>
   );
 };
+
+export default EditPost;

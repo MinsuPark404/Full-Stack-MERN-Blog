@@ -1,6 +1,6 @@
-import HomePosts from "./../components/HomePosts";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import HomePosts from '../components/HomePosts';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
