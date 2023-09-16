@@ -15,10 +15,7 @@ const ProfilePosts = () => {
             <p>16:15</p>
           </div>
         </div>
-        <p className="text-sm md:text-l">
-          Prominent examples of AI software used in everyday life include voice assistants, image recognition for face unlock in mobile phones, and machine learning-based fraud detection. AI software usually involves
-          just downloading software with AI capabilities from an online store and requires no peripheral devices.
-        </p>
+        <p className="text-sm md:text-l">Prominent examples of AI software used in everyday life include voice assistants, image recognition for face unlock in mobile phones, and machine learning-based fraud detection. AI software usually involves just downloading software with AI capabilities from an online store and requires no peripheral devices.</p>
       </div>
     </div>
   );
